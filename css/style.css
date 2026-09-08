@@ -41,14 +41,6 @@ a {
     text-decoration: none;
 }
 
-.input-search-wrapper {
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px;
-}
 
 .section-title {
     margin: 0;
@@ -98,7 +90,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 50px;
-    height: 49px;
+    height: 51px;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 15px 0 0 15px;
@@ -110,6 +102,10 @@ a {
     width: 147px;
     border: 1px solid var(--main-bg-color);
     padding: 14px;
+}
+
+::placeholder {
+    color: black;
 }
 
 .search-button {
@@ -191,6 +187,7 @@ gap: 10px;
 .nav-list a {
     display: inline-block;
     padding-top: 10px;
+    border-top: 3px solid transparent;
 }
 
 .nav-list a:hover {
@@ -266,6 +263,12 @@ flex-direction: column;
     height: 114px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.afficher-plus {
+font-size: 21px;
+font-weight: 700;
+margin-top: 30px;
 }
 
 /****** Populaires ***********/
