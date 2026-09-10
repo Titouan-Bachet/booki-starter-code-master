@@ -52,6 +52,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin: 0;
 }
 
 .card img {
@@ -316,6 +317,84 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/****** Activités *******/
+
+.activités {
+    margin: 35px 0;
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.activités-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activités-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.activités-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.activités-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activités-cards .card-content {
+    padding: 19px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.activités-cards .card-txt {
+     display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.activités-cards .card-title {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.footer {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.footer-title {
+    font-size: 21px;
+    margin: 0;
 }
 
 
