@@ -247,8 +247,13 @@ a {
 
 .hebergements-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
+}
+
+.hebergements-cards a {
+    min-width: 0;
+    display: flex;
 }
 
 .hebergements-cards .card-content {
@@ -267,12 +272,15 @@ a {
 .hebergements-cards .card-title,
 .hebergements-cards .card-subtitle {
     margin: 0;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hebergements-cards img {
@@ -503,19 +511,24 @@ a {
     }
 
     .nav-list a {
-        display: inline-block;
+        display: block;
         border-bottom: 3px solid transparent;
+        padding-bottom: 15px;
+        position: relative;
+        bottom: -3px;
     }
 
     .nav-list a:hover {
         color: #0065FC;
-        border-top: 3px solid var(--main-color);
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid var(--main-color);
     }
 
     .nav-list {
-        width: 100%;
+        width: 100vw;
         justify-content: space-around;
         gap: 0;
+        border-bottom: 3px solid var(--main-bg-color);
     }
 
     .nav-list li {
